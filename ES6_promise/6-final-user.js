@@ -6,8 +6,7 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
   let photo = null;
   try {
     photo = await uploadPhoto(fileName);
-  }
-    catch (err) {
+  } catch (err) {
     photo = `${err.name}: ${err.message}`;
   }
   const promise1 = { status: 'fulfilled', value: user };
