@@ -1,11 +1,12 @@
-class Building {
+export default class Building {
   constructor(sqft) {
-    if (typeof sqft !== 'number' || !Number.isFinite(sqft)) {
-      throw new TypeError('Sqft must be a finite number');
+    if (new.target !== Building
+        && this.evacuationWarningMessage === Building.prototype.evacuationWarningMessage) {
+      throw new Error('Class extending Building must override evacuationWarningMessage');
     }
 
-    if (new.target === Building) {
-      throw new Error('Building cannot be instantiated directly');
+    if (typeof sqft !== 'number') {
+      throw new TypeError('Square footage (sqft) must be a number');
     }
 
     this._sqft = sqft;
@@ -16,8 +17,9 @@ class Building {
   }
 
   evacuationWarningMessage() {
-    throw new Error('Class extending Building must override evacuationWarningMessage');
+    if (new.target !== Building
+        && this.evacuationWarningMessage === Building.prototype.evacuationWarningMessage) {
+      throw new Error('Class extending Building must override evacuationWarningMessage');
+    }
   }
 }
-
-export default Building;
