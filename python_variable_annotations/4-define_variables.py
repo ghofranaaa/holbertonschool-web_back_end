@@ -6,5 +6,5 @@ This module defines and annotates several variables with specific types and valu
 
 a: int = 1
 pi: float = 3.14
-i_understand_annotations: boolean = True
+i_understand_annotations: bool = True
 school: str = "Holberton"
