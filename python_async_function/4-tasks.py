@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
+"""
+This module provides an asynchronous coroutine `task_wait_n` that spawns multiple `task_wait_random` tasks 
+and returns their sorted delays.
+"""
+
 import asyncio
-from 3-tasks import task_wait_random
-import List
+task_wait_random = __import__('3-tasks').task_wait_random
+from typing import List
 
 
 async def task_wait_n(n: int, max_delay: int) -> List[float]:
