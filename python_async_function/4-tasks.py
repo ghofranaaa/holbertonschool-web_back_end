@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-#!/usr/bin/env python3
 """
 This module provides an asynchronous coroutine `task_wait_n`
 that spawns multiple `task_wait_random` tasks and returns
