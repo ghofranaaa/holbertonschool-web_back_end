@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+This module provides an asynchronous coroutine `wait_n`
+that spawns multiple `wait_random` tasks and returns their sorted delays.
+"""
 import asyncio
 from typing import List
 from 0-basic_async_syntax import wait_random
