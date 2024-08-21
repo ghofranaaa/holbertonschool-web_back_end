@@ -3,7 +3,6 @@
 This module contains an asynchronous generator function
 that produces a series of random floating-point numbers.
 """
-
 import random
 import asyncio
 from typing import AsyncGenerator
