@@ -6,8 +6,6 @@ Functions:
     async_generator: Asynchronously generates random
     numbers between 0 and 10.
 """
-
-
 import asyncio
 import random
 from typing import AsyncGenerator
