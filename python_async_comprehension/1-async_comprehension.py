@@ -15,5 +15,5 @@ async def async_comprehension() -> List(float):
 
     Returns:
         list of float: A list containing 10 random floating-point numbers.
-    """
+"""
     return [num async for num in async_generator()]
