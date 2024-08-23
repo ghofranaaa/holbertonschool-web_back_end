@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-This module provides a Server class for paginating a dataset of popular baby names.
+This module provides a Server class for paginating a dataset of popular
+baby names.
 """
 
 import csv
