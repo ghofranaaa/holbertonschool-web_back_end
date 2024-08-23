@@ -3,6 +3,7 @@
 This module provides helper functions for pagination tasks.
 """
 
+
 def index_range(page, page_size):
     """
     Calculate the start and end indexes for a given page and page size.
