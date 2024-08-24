@@ -1,2 +1,2 @@
 // listing all document
-my_db.show.collection
+my_db.school.find()
