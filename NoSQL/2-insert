@@ -1,2 +1,2 @@
 // inserting in db collection
-my_db.school.insert({name: "Holberton school "}):
+my_db.school.insert({name: "Holberton school "});
