@@ -1,3 +1,3 @@
 // inserting in db collection
-db.creatCollection("school")
+db.createCollection("school")
 db.school.insertOne({ name: "Holberton school" });
