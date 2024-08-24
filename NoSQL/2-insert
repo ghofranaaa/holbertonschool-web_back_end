@@ -1,3 +1,2 @@
 // inserting in db collection
-use my_db
 db.school.insertOne({name:"Holberton school"});
