@@ -46,7 +46,7 @@ class Server:
         dataset = self.indexed_dataset()
         data = []
         current_index = index
-        next_index = current_index + page_size
+        next_index = index
 
         while len(data) < page_size and next_index < len(data_set)
         item = data_set.get(next_index)
