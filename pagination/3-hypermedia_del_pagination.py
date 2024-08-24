@@ -41,15 +41,15 @@ class Server:
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
         """Return a dictionary with deletion-resilient hypermedia pagination."""
-        assert index in not None and 0 <= index < len(self.indexed_dataset())
+        assert index is not None and 0 <= index < len(self.indexed_dataset())
 
         dataset = self.indexed_dataset()
         data = []
         current_index = index
         next_index = index
 
-        while len(data) < page_size and next_index < len(data_set)
-        item = data_set.get(next_index)
+        while len(data) < page_size and next_index < len(data_set):
+        item = dataset.get(next_index)
         if item is not None:
             data.append(item)
         next_index += 1
