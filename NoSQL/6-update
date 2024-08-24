@@ -1,0 +1,2 @@
+// update
+db.school.updateOne({address: "972 Mission street”})
