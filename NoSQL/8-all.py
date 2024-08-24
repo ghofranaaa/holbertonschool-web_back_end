@@ -6,4 +6,4 @@ def list_all(mongo_collection):
     """
     Lists all documents in a collection.
     """
-    return lis(mongo_collection.find())
+    return list(mongo_collection.find())
