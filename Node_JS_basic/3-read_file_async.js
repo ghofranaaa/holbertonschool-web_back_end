@@ -9,7 +9,7 @@ function countStudents(path) {
         throw new Error('Cannot load the database');
       }
 
-      const header = lines.shift();
+      lines.shift();
 
       const fieldGroups = {};
 
