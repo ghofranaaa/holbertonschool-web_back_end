@@ -1,13 +1,11 @@
 import express from 'express';
-import router from './routes';
+import AppController from '../controllers/AppController';
+import StudentsController from '../controllers/StudentsController';
 
-const app = express();
-const port = 1245;
+const router = express.Router();
 
-app.use('/', router);
+router.get('/', AppController.getHomepage);
+router.get('/students', StudentsController.getAllStudents);
+router.get('/students/:major', StudentsController.getAllStudentsByMajor);
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
-
-export default app;
+export default router;
