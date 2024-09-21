@@ -9,7 +9,8 @@ class StudentsController {
         let responseText = 'This is the list of our students\n';
 
         Object.keys(students).sort().forEach((field) => {
-          responseText += `Number of students in ${field}: ${students[field].length}. List: ${students[field].join(', ')}\n`;
+		const { length } = students[field];
+        responseText += `Number of students in ${field}: ${students[field].length}. List: ${students[field].join(', ')}\n`;
         });
 
         res.status(200).send(responseText.trim());
